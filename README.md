@@ -6,7 +6,7 @@ This application has been developed as a homework during realization of the cour
 
 ##
 
-![task-list](images/task-list.gif)
+![task-list](public/images/task-list.gif)
 
 ## Languages and technologies
 
