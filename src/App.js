@@ -4,11 +4,22 @@ import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+const initialTasks = () => {
+  const tasksSaved = localStorage.getItem("tasks");
+
+  return tasksSaved ? JSON.parse(tasksSaved) : [];
+};
 
 function App() {
-  const [tasks, setTasks] = useState([]);
   const [hideDone, setHideDone] = useState(false);
+
+  const [tasks, setTasks] = useState(initialTasks);
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   const addNewTask = (newTaskContent) => {
     setTasks(tasks => [
