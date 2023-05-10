@@ -1,41 +1,35 @@
-.form {
+import styled from "styled-components";
+
+export const FormContainer = styled.form`
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
-}
 
-@media(max-width: 767px) {
-    .form {
+    @media(max-width: 767px) {
         grid-template-columns: 1fr;
     }
-}
+`
 
-.form__field {
+export const FormField = styled.input`
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 2px;
-}
+`
 
-.form__button {
+export const FormButton = styled.button`
     padding: 10px;
     color: white;
     background: hsl(180, 100%, 25%);
     border: none;
     border-radius: 2px;
     transition: background 0.5s, transform 0.5s;
-}
 
-.form__button:hover {
-    background: hsl(180, 100%, 30%);
-    transform: scale(1.2);
-}
-
-@media(max-width: 767px) {
-    .form__button:hover {
-        transform: scale(1.1);
+    &:hover {
+        background: hsl(180, 100%, 30%);
+        transform: scale(1.15);
     }
-}
 
-.form__button:active {
-    background: hsl(180, 100%, 35%)
-}
+    &:active {
+        background: hsl(180, 100%, 35%)
+    }
+`

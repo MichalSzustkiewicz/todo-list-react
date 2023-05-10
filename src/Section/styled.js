@@ -1,10 +1,12 @@
-.section {
+import styled from "styled-components";
+
+export const SectionContainer = styled.section`
     background-color: white;
     margin: 10px 0;
     box-shadow: 0 0 5px #ccc;
-}
+`
 
-.section__header {
+export const SectionHeader = styled.header`
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;
@@ -12,19 +14,17 @@
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid #ddd;
-}
 
-@media(max-width: 767px) {
-    .section__header {
+    @media(max-width: 767px) {
         grid-template-columns: 1fr;
     }
-}
+`
 
-.section__title {
+export const SectionTitle = styled.h2`
     margin: 0;
     font-size: 20px;
-}
+`
 
-.section__body {
+export const SectionBody = styled.div`
     padding: 20px;
-}
+`
