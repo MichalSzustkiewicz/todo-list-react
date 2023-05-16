@@ -1,8 +1,8 @@
-import { ButtonsContainer, Button } from "./styled";
+import { Wrapper, Button } from "./styled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, markAllDone }) => (
   tasks.length > 0 && (
-    <ButtonsContainer>
+    <Wrapper>
       <Button
         onClick={toggleHideDone}
       >
@@ -14,7 +14,7 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, markAllDone }) => (
       >
         Ukończ wszystkie
       </Button>
-    </ButtonsContainer>
+    </Wrapper>
   )
 );
 

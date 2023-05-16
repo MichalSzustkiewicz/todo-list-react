@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FormContainer = styled.form`
+export const StyledForm = styled.form`
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
@@ -8,15 +8,15 @@ export const FormContainer = styled.form`
     @media(max-width: 767px) {
         grid-template-columns: 1fr;
     }
-`
+`;
 
-export const FormField = styled.input`
+export const Input = styled.input`
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 2px;
-`
+`;
 
-export const FormButton = styled.button`
+export const Button = styled.button`
     padding: 10px;
     color: white;
     background: hsl(180, 100%, 25%);
@@ -32,4 +32,4 @@ export const FormButton = styled.button`
     &:active {
         background: hsl(180, 100%, 35%)
     }
-`
+`;

@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export const SectionContainer = styled.section`
+export const Wrapper = styled.section`
     background-color: white;
     margin: 10px 0;
     box-shadow: 0 0 5px #ccc;
-`
+`;
 
-export const SectionHeader = styled.header`
+export const Header = styled.header`
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;
@@ -18,13 +18,13 @@ export const SectionHeader = styled.header`
     @media(max-width: 767px) {
         grid-template-columns: 1fr;
     }
-`
+`;
 
-export const SectionTitle = styled.h2`
+export const Title = styled.h2`
     margin: 0;
     font-size: 20px;
-`
+`;
 
-export const SectionBody = styled.div`
+export const Body = styled.div`
     padding: 20px;
-`
+`;
