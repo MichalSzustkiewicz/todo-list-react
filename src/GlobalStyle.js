@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: 'Lato', sans-serif;
-        background-color: #eee;
+        background: ${({ theme }) => theme.color.gallery};
         word-break: break-word;
     }
 `;

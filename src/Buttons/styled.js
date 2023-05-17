@@ -6,22 +6,22 @@ export const Wrapper = styled.div`
 `;
 
 export const Button = styled.button`
-    color: teal;
     background: transparent;
+    color: ${({ theme }) => theme.color.teal};
     border: none;
     margin: 0 0 0 20px;
-    transition: color 0.5s linear;
+    transition: filter 0.5s linear;
 
-    @media(max-width: 767px) {
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         flex-basis: 100%;
         margin: 10px;
     }
 
     &:hover {
-        color: hsl(180, 100%, 35%);
+        filter: brightness(110%);
     }
 
     &:disabled {
-        color: #ccc;
+        color: ${({ theme }) => theme.color.silver};
     }
 `;
