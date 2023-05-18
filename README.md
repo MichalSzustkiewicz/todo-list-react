@@ -15,9 +15,11 @@ This application has been developed as a homework during realization of the cour
 ## Languages and technologies
 
 - HTML
-- CSS (BEM, Grid)
+- Flex, Grid
+- styled components
 - JavaScript (ES6+)
 - Create React App (webpack, Babel)
+- useState, useEffect, useRef, custom hooks
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
